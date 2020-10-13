@@ -363,7 +363,7 @@ sub verify_signature(){
 sub validateNumAssertions(){
 	my $self = shift;
     
-    my @assertionNodes = $self->{xml_as_dom}->getElementsByTagName('saml:Assertion');
+    my @assertionNodes = $self->{xml_as_dom}->getElementsByTagName('Assertion');
     return (scalar(@assertionNodes) == 1);
 }
 
